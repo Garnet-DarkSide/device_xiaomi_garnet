@@ -154,6 +154,7 @@ debug.sf.predict_hwc_composition_strategy=0
 debug.sf.set_idle_timer_ms=1100
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_phase_offsets_as_durations=1
+dev.pm.dyn_samplingrate=1
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.pineapple.api34
@@ -172,6 +173,19 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=142671872
 vendor.gralloc.disable_ubwc=0
+
+# HWUI
+ro.hwui.texture_cache_size=72 
+ro.hwui.layer_cache_size=48 
+ro.hwui.r_buffer_cache_size=8 
+ro.hwui.path_cache_size=32 
+ro.hwui.gradient_cache_size=1 
+ro.hwui.drop_shadow_cache_size=6 
+ro.hwui.texture_cache_flushrate=0.4 
+ro.hwui.text_small_cache_width=1024 
+ro.hwui.text_small_cache_height=1024 
+ro.hwui.text_large_cache_width=2048 
+ro.hwui.text_large_cache_height=2048
 
 # Keystore
 ro.hardware.keystore_desede=true
