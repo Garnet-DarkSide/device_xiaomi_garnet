@@ -135,9 +135,7 @@ PRODUCT_COPY_FILES += \
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
-    android.hardware.boot-service.qti.recovery \
-    bootctrl.garnet:64 \
-    bootctrl.garnet.recovery:64
+    android.hardware.boot-service.qti.recovery
 
 # Camera
 PRODUCT_PACKAGES += \
