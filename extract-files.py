@@ -86,6 +86,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.+dolby.+\n', ''),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
+    'vendor/lib64/nfc_nci.nqx.default.hw.v1.so': blob_fixup()
+        .add_needed('libbase_shim.so'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
     ('vendor/lib64/hw/camera.qcom.so', 'vendor/lib64/hw/com.qti.chi.override.so', 'vendor/lib64/libcamxcommonutils.so', 'vendor/lib64/libmialgoengine.so'): blob_fixup()
