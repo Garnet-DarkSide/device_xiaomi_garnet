@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/alpha_garnet.mk
+    $(LOCAL_DIR)/horizon_garnet.mk
