@@ -15,6 +15,7 @@ $(call inherit-product, vendor/horizon/config/common_full_phone.mk)
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
+HORIZON_BUILD_TYPE := OFFICIAL
 HORIZON_MAINTAINER := franlop77
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
