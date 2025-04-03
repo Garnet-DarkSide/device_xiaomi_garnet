@@ -17,6 +17,7 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 
 HORIZON_MAINTAINER := franlop77
 TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
 
 PRODUCT_NAME := horizon_garnet
 PRODUCT_DEVICE := garnet
