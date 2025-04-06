@@ -9,18 +9,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AlphaDroid stuff.
-$(call inherit-product, vendor/horizon/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-HORIZON_BUILD_TYPE := OFFICIAL
-HORIZON_MAINTAINER := franlop77
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
-
-PRODUCT_NAME := horizon_garnet
+PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

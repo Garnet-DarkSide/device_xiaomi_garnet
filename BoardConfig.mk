@@ -75,7 +75,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/horizon/config/device_framework_matrix.xml
+    vendor/lineage/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest.xml \
@@ -120,7 +120,7 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 
 # Kernel (prebuilt)
-PREBUILT_PATH := device/xiaomi/garnet-prebuilt
+PREBUILT_PATH := device/xiaomi/garnet-kernel
 BOARD_PREBUILT_DTBIMAGE_DIR := $(PREBUILT_PATH)/images/dtbs/
 BOARD_PREBUILT_DTBOIMAGE := $(PREBUILT_PATH)/images/dtbo.img
 
