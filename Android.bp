@@ -10,14 +10,6 @@ soong_namespace {
     ],
 }
 
-prebuilt_hidl_interfaces {
-    name: "hidl_hardware_limits",
-    interfaces: [
-        "vendor.qti.hardware.limits@1.0::ILimits",
-        "vendor.qti.hardware.limits@1.1::ILimits",
-    ],
-}
-
 install_symlink {
     name: "firmware_wlan_mac.bin_symlink",
     vendor: true,
