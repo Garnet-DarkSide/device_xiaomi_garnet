@@ -16,6 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # BLKI
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
 BLACKIRON_BUILDTYPE := UNOFFICIAL
 BLACKIRON_MAINTAINER := JYR_RC
 WITH_GMS := true
