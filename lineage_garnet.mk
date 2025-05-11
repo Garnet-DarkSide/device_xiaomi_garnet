@@ -9,11 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common BlKi stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
+
+# BLKI
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_EXCLUDES_AUDIOFX := true
+BLACKIRON_BUILDTYPE := Official
+BLACKIRON_MAINTAINER := JYR_RC
+WITH_GMS := true
+#WITH_GMS_VARIANT := pico
 
 PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
