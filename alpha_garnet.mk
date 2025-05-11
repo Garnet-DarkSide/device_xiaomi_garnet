@@ -16,7 +16,7 @@ $(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
 # Maintainer
-ALPHA_MAINTAINER := UnmoveD
+ALPHA_MAINTAINER := JYR_RC
 ALPHA_BUILD_TYPE := Official
 
 # Device config
